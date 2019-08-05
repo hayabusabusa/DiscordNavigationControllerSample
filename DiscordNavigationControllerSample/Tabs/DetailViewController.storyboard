@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qdg-y8-0MG">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="CKJ-HC-eIB">
+            <objects>
+                <viewController id="qdg-y8-0MG" customClass="DetailViewController" customModule="DiscordNavigationControllerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LY1-E4-8Ae">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abs-eg-ZCA">
+                                <rect key="frame" x="118" y="438" width="178" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuJ-b2-Und">
+                                <rect key="frame" x="104" y="466" width="206.5" height="31.5"/>
+                                <string key="text">An isolated fact that is considered
+ separately from the whole.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GuJ-b2-Und" firstAttribute="centerX" secondItem="abs-eg-ZCA" secondAttribute="centerX" id="8rk-7w-p6F"/>
+                            <constraint firstItem="GuJ-b2-Und" firstAttribute="top" secondItem="abs-eg-ZCA" secondAttribute="bottom" constant="8" id="ASH-cK-mxv"/>
+                            <constraint firstItem="abs-eg-ZCA" firstAttribute="centerY" secondItem="LY1-E4-8Ae" secondAttribute="centerY" id="FTh-Nk-uN6"/>
+                            <constraint firstItem="abs-eg-ZCA" firstAttribute="centerX" secondItem="LY1-E4-8Ae" secondAttribute="centerX" id="hVO-pp-PEg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xGX-lF-3A8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EfA-DE-UyT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="-159"/>
+        </scene>
+    </scenes>
+</document>

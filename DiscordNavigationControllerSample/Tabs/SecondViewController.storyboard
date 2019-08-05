@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QV9-rV-yOs">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="eUI-yj-CF0">
+            <objects>
+                <viewController id="QV9-rV-yOs" customClass="SecondViewController" customModule="DiscordNavigationControllerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hAL-As-U9k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Second View Controller" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cwq-aW-SSu">
+                                <rect key="frame" x="111" y="438" width="192" height="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZD-Fs-xnt">
+                                <rect key="frame" x="76" y="466" width="262.5" height="31.5"/>
+                                <string key="text">Welcome to the Second View Controller XD
+I am travelling second class.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xux-qb-uwL">
+                                <rect key="frame" x="167" y="505.5" width="80" height="30"/>
+                                <state key="normal" title="Show detail"/>
+                                <connections>
+                                    <action selector="tapButton:" destination="QV9-rV-yOs" eventType="touchUpInside" id="zmK-UA-eWx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xux-qb-uwL" firstAttribute="top" secondItem="AZD-Fs-xnt" secondAttribute="bottom" constant="8" id="5sy-Ct-61X"/>
+                            <constraint firstItem="AZD-Fs-xnt" firstAttribute="top" secondItem="Cwq-aW-SSu" secondAttribute="bottom" constant="8" id="ZlB-6I-iKp"/>
+                            <constraint firstItem="Cwq-aW-SSu" firstAttribute="centerX" secondItem="hAL-As-U9k" secondAttribute="centerX" id="dGD-On-Rip"/>
+                            <constraint firstItem="AZD-Fs-xnt" firstAttribute="centerX" secondItem="Cwq-aW-SSu" secondAttribute="centerX" id="hQf-Um-TeA"/>
+                            <constraint firstItem="Cwq-aW-SSu" firstAttribute="centerY" secondItem="hAL-As-U9k" secondAttribute="centerY" id="sKE-Vp-CbS"/>
+                            <constraint firstItem="xux-qb-uwL" firstAttribute="centerX" secondItem="AZD-Fs-xnt" secondAttribute="centerX" id="u6O-KU-rbW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="sKv-uk-UaE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jyu-kI-AFD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="-206"/>
+        </scene>
+    </scenes>
+</document>
