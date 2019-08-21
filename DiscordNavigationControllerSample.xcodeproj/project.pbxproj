@@ -30,6 +30,11 @@
 		A4C54A12230CD3C8000F7C7D /* SwipeHideViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C54A11230CD3C8000F7C7D /* SwipeHideViewController.storyboard */; };
 		A4C54A14230CDB4D000F7C7D /* TransitionHideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C54A13230CDB4D000F7C7D /* TransitionHideViewController.swift */; };
 		A4C54A16230CDB78000F7C7D /* TransitionHideViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C54A15230CDB78000F7C7D /* TransitionHideViewController.storyboard */; };
+		A4C54A19230CEE57000F7C7D /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C54A18230CEE57000F7C7D /* CodeViewController.swift */; };
+		A4C54A1B230CEE69000F7C7D /* VCInitTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C54A1A230CEE69000F7C7D /* VCInitTabBarController.swift */; };
+		A4C54A1D230CEE98000F7C7D /* VCInitTabBarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C54A1C230CEE98000F7C7D /* VCInitTabBarController.storyboard */; };
+		A4C54A1F230CEED6000F7C7D /* StoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C54A1E230CEED6000F7C7D /* StoryboardViewController.swift */; };
+		A4C54A21230CEF0A000F7C7D /* StoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4C54A20230CEF0A000F7C7D /* StoryboardViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,11 @@
 		A4C54A11230CD3C8000F7C7D /* SwipeHideViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SwipeHideViewController.storyboard; sourceTree = "<group>"; };
 		A4C54A13230CDB4D000F7C7D /* TransitionHideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionHideViewController.swift; sourceTree = "<group>"; };
 		A4C54A15230CDB78000F7C7D /* TransitionHideViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransitionHideViewController.storyboard; sourceTree = "<group>"; };
+		A4C54A18230CEE57000F7C7D /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		A4C54A1A230CEE69000F7C7D /* VCInitTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCInitTabBarController.swift; sourceTree = "<group>"; };
+		A4C54A1C230CEE98000F7C7D /* VCInitTabBarController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VCInitTabBarController.storyboard; sourceTree = "<group>"; };
+		A4C54A1E230CEED6000F7C7D /* StoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardViewController.swift; sourceTree = "<group>"; };
+		A4C54A20230CEF0A000F7C7D /* StoryboardViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoryboardViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +142,7 @@
 				A4540A5222F7F1ED005A2CB4 /* AppDelegate.swift */,
 				A4540A9422F7FA90005A2CB4 /* TableViewController.swift */,
 				A4540A9622F7FA9A005A2CB4 /* TableViewController.storyboard */,
+				A4C54A17230CEE25000F7C7D /* VCInit */,
 				A4C54A09230CC45A000F7C7D /* TabBar */,
 				A4C54A0A230CC48E000F7C7D /* Hide */,
 				A4540A5922F7F1F2005A2CB4 /* Assets.xcassets */,
@@ -195,6 +206,18 @@
 				A4C54A11230CD3C8000F7C7D /* SwipeHideViewController.storyboard */,
 			);
 			path = Hide;
+			sourceTree = "<group>";
+		};
+		A4C54A17230CEE25000F7C7D /* VCInit */ = {
+			isa = PBXGroup;
+			children = (
+				A4C54A1A230CEE69000F7C7D /* VCInitTabBarController.swift */,
+				A4C54A1C230CEE98000F7C7D /* VCInitTabBarController.storyboard */,
+				A4C54A18230CEE57000F7C7D /* CodeViewController.swift */,
+				A4C54A1E230CEED6000F7C7D /* StoryboardViewController.swift */,
+				A4C54A20230CEF0A000F7C7D /* StoryboardViewController.storyboard */,
+			);
+			path = VCInit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,10 +327,12 @@
 				A4540A9022F7F955005A2CB4 /* PatternOneTabBarController.storyboard in Resources */,
 				A4540A8422F7F3B4005A2CB4 /* FirstViewController.storyboard in Resources */,
 				A4540A5D22F7F1F3005A2CB4 /* LaunchScreen.storyboard in Resources */,
+				A4C54A21230CEF0A000F7C7D /* StoryboardViewController.storyboard in Resources */,
 				A4C54A0E230CC4DA000F7C7D /* TapHideViewController.storyboard in Resources */,
 				A4C54A12230CD3C8000F7C7D /* SwipeHideViewController.storyboard in Resources */,
 				A4540A8822F7F4F5005A2CB4 /* SecondViewController.storyboard in Resources */,
 				A4540A9B22F7FFC2005A2CB4 /* PatternTwoTabBarController.storyboard in Resources */,
+				A4C54A1D230CEE98000F7C7D /* VCInitTabBarController.storyboard in Resources */,
 				A4540A9722F7FA9A005A2CB4 /* TableViewController.storyboard in Resources */,
 				A4540A5A22F7F1F2005A2CB4 /* Assets.xcassets in Resources */,
 				A4C54A16230CDB78000F7C7D /* TransitionHideViewController.storyboard in Resources */,
@@ -336,6 +361,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4C54A1B230CEE69000F7C7D /* VCInitTabBarController.swift in Sources */,
+				A4C54A1F230CEED6000F7C7D /* StoryboardViewController.swift in Sources */,
 				A4540A8622F7F4D5005A2CB4 /* SecondViewController.swift in Sources */,
 				A4540A9522F7FA90005A2CB4 /* TableViewController.swift in Sources */,
 				A4C54A10230CD37C000F7C7D /* SwipeHideViewController.swift in Sources */,
@@ -346,6 +373,7 @@
 				A4540A8E22F7F802005A2CB4 /* PatternOneTabBarController.swift in Sources */,
 				A4540A5322F7F1ED005A2CB4 /* AppDelegate.swift in Sources */,
 				A4C54A14230CDB4D000F7C7D /* TransitionHideViewController.swift in Sources */,
+				A4C54A19230CEE57000F7C7D /* CodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
