@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ozF-7j-rkA">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tap Hie View Controller-->
+        <scene sceneID="sbF-vq-D7B">
+            <objects>
+                <viewController id="ozF-7j-rkA" customClass="TapHieViewController" customModule="DiscordNavigationControllerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sxf-Pw-zRP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tap view." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUz-pE-Ca7">
+                                <rect key="frame" x="137.5" y="437.5" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cks-du-XOh">
+                                <rect key="frame" x="182.5" y="474.5" width="51" height="31"/>
+                                <connections>
+                                    <action selector="onValueChanged:" destination="ozF-7j-rkA" eventType="valueChanged" id="p5s-ow-Sks"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="↑ Status bar hide or show" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if3-GI-U5g">
+                                <rect key="frame" x="122.5" y="513.5" width="169" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cks-du-XOh" firstAttribute="centerX" secondItem="tUz-pE-Ca7" secondAttribute="centerX" id="0ji-AT-P3A"/>
+                            <constraint firstItem="if3-GI-U5g" firstAttribute="centerX" secondItem="Cks-du-XOh" secondAttribute="centerX" id="9LM-eQ-R75"/>
+                            <constraint firstItem="Cks-du-XOh" firstAttribute="top" secondItem="tUz-pE-Ca7" secondAttribute="bottom" constant="16" id="DrU-Oz-WyA"/>
+                            <constraint firstItem="if3-GI-U5g" firstAttribute="top" secondItem="Cks-du-XOh" secondAttribute="bottom" constant="8" id="L9R-m1-GhA"/>
+                            <constraint firstItem="tUz-pE-Ca7" firstAttribute="centerX" secondItem="sxf-Pw-zRP" secondAttribute="centerX" id="ZJW-eJ-Cfn"/>
+                            <constraint firstItem="tUz-pE-Ca7" firstAttribute="centerY" secondItem="sxf-Pw-zRP" secondAttribute="centerY" id="f3F-S7-lmD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="891-Li-3ib"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEp-Lp-HOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="-207"/>
+        </scene>
+    </scenes>
+</document>
