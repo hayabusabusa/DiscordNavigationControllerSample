@@ -172,6 +172,31 @@
                                             <segue destination="e8s-kh-FKx" kind="show" id="CNZ-Yf-lY8"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="48" id="Uhd-JJ-mTK">
+                                        <rect key="frame" x="0.0" y="455.5" width="414" height="48"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uhd-JJ-mTK" id="7Cb-yQ-3jp">
+                                            <rect key="frame" x="0.0" y="0.0" width="376" height="47.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scroll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRp-hW-Xip">
+                                                    <rect key="frame" x="16" y="8" width="328" height="31.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="TRp-hW-Xip" secondAttribute="trailing" constant="32" id="1vk-wA-Nrh"/>
+                                                <constraint firstAttribute="bottom" secondItem="TRp-hW-Xip" secondAttribute="bottom" constant="8" id="7CX-Fq-f28"/>
+                                                <constraint firstItem="TRp-hW-Xip" firstAttribute="leading" secondItem="7Cb-yQ-3jp" secondAttribute="leading" constant="16" id="XkR-Mp-qFP"/>
+                                                <constraint firstItem="TRp-hW-Xip" firstAttribute="top" secondItem="7Cb-yQ-3jp" secondAttribute="top" constant="8" id="jHw-ne-t5N"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Fs9-9Q-uGQ" kind="show" id="M1t-sL-kJ0"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -220,6 +245,14 @@
             </objects>
             <point key="canvasLocation" x="3380" y="68"/>
         </scene>
+        <!--ScrollHideViewController-->
+        <scene sceneID="WiW-Vw-FrW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ScrollHideViewController" id="Fs9-9Q-uGQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WQz-zc-DPe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3376" y="113"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="81C-ja-Q3v">
             <objects>
@@ -228,6 +261,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kxs-tS-Z3X">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

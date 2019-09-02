@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A1G-f2-JiT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Scroll Hide View Controller-->
+        <scene sceneID="Qld-1Y-pDZ">
+            <objects>
+                <viewController id="A1G-f2-JiT" customClass="ScrollHideViewController" customModule="DiscordNavigationControllerSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VxS-0I-Vgj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please swipe up view ☝️" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ac2-mx-tXW">
+                                <rect key="frame" x="107" y="438" width="200" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C89-FK-Tqa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="PMl-Hs-jDH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nX-7G-6NP">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="900" id="rxO-z0-x43"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PMl-Hs-jDH" firstAttribute="leading" secondItem="C89-FK-Tqa" secondAttribute="leading" id="J7R-66-UnN"/>
+                                    <constraint firstItem="PMl-Hs-jDH" firstAttribute="width" secondItem="C89-FK-Tqa" secondAttribute="width" id="Ppw-Jg-ELh"/>
+                                    <constraint firstItem="PMl-Hs-jDH" firstAttribute="top" secondItem="C89-FK-Tqa" secondAttribute="top" id="R1j-eQ-V0w"/>
+                                    <constraint firstAttribute="bottom" secondItem="PMl-Hs-jDH" secondAttribute="bottom" id="bc9-GH-w2j"/>
+                                    <constraint firstAttribute="trailing" secondItem="PMl-Hs-jDH" secondAttribute="trailing" id="iQJ-jc-BKD"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C89-FK-Tqa" firstAttribute="leading" secondItem="Wc1-HS-gAr" secondAttribute="leading" id="8c2-cG-61N"/>
+                            <constraint firstItem="Wc1-HS-gAr" firstAttribute="bottom" secondItem="C89-FK-Tqa" secondAttribute="bottom" id="ASh-zE-lIx"/>
+                            <constraint firstItem="ac2-mx-tXW" firstAttribute="centerX" secondItem="VxS-0I-Vgj" secondAttribute="centerX" id="UFu-iP-oLu"/>
+                            <constraint firstItem="Wc1-HS-gAr" firstAttribute="trailing" secondItem="C89-FK-Tqa" secondAttribute="trailing" id="Zdo-fT-N4m"/>
+                            <constraint firstItem="C89-FK-Tqa" firstAttribute="top" secondItem="Wc1-HS-gAr" secondAttribute="top" id="a1H-YH-0FN"/>
+                            <constraint firstItem="ac2-mx-tXW" firstAttribute="centerY" secondItem="VxS-0I-Vgj" secondAttribute="centerY" id="nSq-EF-nBT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Wc1-HS-gAr"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="C89-FK-Tqa" id="0cL-d8-mKA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obj-Hk-3og" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="294" y="118"/>
+        </scene>
+    </scenes>
+</document>
